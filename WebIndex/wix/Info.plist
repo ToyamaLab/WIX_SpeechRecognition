@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Toayama Lab</string>
+	<key>Builder Version</key>
+	<string>9537.71</string>
+	<key>CFBundleDisplayName</key>
+	<string>WIX</string>
+	<key>CFBundleIdentifier</key>
+	<string>lab.toyama.wix</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>7.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.7.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Global Page</key>
+		<string>data/index.html</string>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>data/includes/userscript.js</string>
+			</array>
+			<key>Start</key>
+			<array>
+				<string>data/includes/jquery.min.js</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string> Join for Web !</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+	<key>Website</key>
+	<string>https://wixdemo.db.ics.keio.ac.jp</string>
+</dict>
+</plist>

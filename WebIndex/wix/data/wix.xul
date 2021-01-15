@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://WIX.safariextension/content/scripts/jquery.min.js" />
+	<script type="application/x-javascript" src="chrome://WIX.safariextension/content/scripts/ecl.js" />
+	<script type="application/x-javascript" src="chrome://WIX.safariextension/content/scripts/background.js" />
+	
+	<!-- コンテントスクリプトの指定 DOMが構築された時に挿入の記述 -->
+	<script type="text/javascript">
+	    gBrowser.addEventListener("DOMContentLoaded", function(event){
+	        if(event.target.documentURI==window.content.document.location.href){
+	            var loader = Components.classes["@mozilla.org/moz/jssubscript-loader;1"].getService(Components.interfaces.mozIJSSubScriptLoader);
+
+	            loader.loadSubScript("chrome://WIX.safariextension/content/includes/jquery.min.js", event.target);
+
+	            loader.loadSubScript("chrome://WIX.safariextension/content/includes/userscript.js", event.target, "UTF-8");
+	        }
+	    });
+	</script>
+</overlay>

@@ -1,0 +1,256 @@
+.op-img {
+  float: left;
+  border-radius: 50%;
+  width:  3em;
+  height: 3em;
+}
+
+.container{
+    margin-top: 1em;
+}
+
+.speech-bubble {
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.speech-bubble p {
+  margin: 0;
+}
+
+.speech-bubble {
+  background: #ffffff;
+}
+
+.speech-bubble:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.speech-bubble:before {
+  content: "";
+  display: table;
+}
+
+.sb-bubble:after,
+.sb-bubble:before {
+  content: " ";
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 1.2em;
+  width: 0;
+}
+
+.sb-left {
+  float: left;
+  margin-top:40px;
+  margin-left: 20px;
+}
+
+.sb-right {
+  float: right;
+  margin-top:40px;
+  margin-right: 20px;
+}
+
+/*** 旧ライン風（立体的） ***/
+
+.sb-line1 {
+  border: solid 1px #f7ffff;
+  border-radius: 1em;
+  max-width: 70%;
+  padding: 0.2em 1em;
+  position: relative;
+}
+
+/* 左側 */
+
+.sb-line1.sb-left {
+  background: linear-gradient(
+    to bottom,
+    #f7ffff 0%,
+    #f4f5f7 20%,
+    #f4f5f7 80%,
+    #d5d8dd 100%
+  );
+}
+
+.sb-line1.sb-left:after {
+  background: #ffffff;
+  border: solid #f7ffff;
+  border-radius: 1.6em 0 0 1.6em;
+  border-width: 0 0 1px 1px;
+  height: 1.6em;
+  margin: -2.3em -1px 0 0;
+  right: 100%;
+  width: 0.8em;
+}
+
+.sb-line1.sb-left:before {
+  background: #f4f5f7;
+  border: solid #f7ffff;
+  border-radius: 1.6em 0 0 1.6em;
+  border-width: 0 0 1px 1px;
+  height: 1.6em;
+  margin: -1.8em -1px 0 0;
+  right: 100%;
+  width: 0.8em;
+}
+
+/* 右側 */
+
+.sb-line1.sb-right {
+  background: linear-gradient(
+    to bottom,
+    #daf0a9 0%,
+    #afe64a 20%,
+    #afe64a 80%,
+    #8cc159 100%
+  );
+}
+
+.sb-line1.sb-right:after {
+  background: #ffffff;
+  border: solid #f7ffff;
+  border-radius: 0 1.6em 1.6em 0;
+  border-width: 0 1px 1px 0;
+  height: 1.6em;
+  left: 100%;
+  margin: -2.3em 0 0 -1px;
+  width: 0.8em;
+}
+
+.sb-line1.sb-right:before {
+  background: #afe64a;
+  border: solid #f7ffff;
+  border-radius: 0 1.6em 1.6em 0;
+  border-width: 0 1px 1px 0;
+  height: 1.6em;
+  left: 100%;
+  margin: -1.8em 0 0 -1px;
+  width: 0.8em;
+}
+
+/*** 現ライン風（フラット１） ***/
+
+.sb-line2 {
+  border: solid 1px #c5d0e4;
+  border-radius: 1em;
+  max-width: 70%;
+  padding: 0.2em 1em;
+  position: relative;
+}
+
+.sb-line2.sb-left {
+  background: #f9f9f9;
+}
+
+.sb-line2.sb-left:after {
+  background: #ffffff;
+  border: solid #c5d0e4;
+  border-radius: 1.6em 0 0 1.6em;
+  border-width: 0 0 1px 1px;
+  height: 1.6em;
+  margin: -2.3em -1px 0 0;
+  right: 100%;
+  width: 0.8em;
+}
+
+.sb-line2.sb-left:before {
+  background: #f9f9f9;
+  border: solid #c5d0e4;
+  border-radius: 1.6em 0 0 1.6em;
+  border-width: 0 0 1px 1px;
+  height: 1.6em;
+  margin: -1.8em -1px 0 0;
+  right: 100%;
+  width: 0.8em;
+}
+
+.sb-line2.sb-right {
+  background: #84e248;
+}
+
+.sb-line2.sb-right:after {
+  background: #ffffff;
+  border: solid #c5d0e4;
+  border-radius: 0 1.6em 1.6em 0;
+  border-width: 0 1px 1px 0;
+  height: 1.6em;
+  left: 100%;
+  margin: -2.3em 0 0 -1px;
+  width: 0.8em;
+}
+
+.sb-line2.sb-right:before {
+  background: #84e248;
+  border: solid #c5d0e4;
+  border-radius: 0 1.6em 1.6em 0;
+  border-width: 0 1px 1px 0;
+  height: 1.6em;
+  left: 100%;
+  margin: -1.8em 0 0 -1px;
+  width: 0.8em;
+}
+
+/*** 現ライン風（フラット２） ***/
+
+.sb-line3 {
+  border: solid 2px #c5d0e4;
+  border-radius: 0.5em;
+  max-width: 70%;
+  padding: 0.2em 1em;
+  position: relative;
+}
+
+.sb-line3.sb-left {
+  background: #ffffff;
+  border-top-left-radius: 0;
+}
+
+.sb-line3.sb-left:after {
+  background: #ffffff;
+  border: solid #c5d0e4;
+  border-radius: 0 1em 0 0;
+  border-width: 2px 2px 0 0;
+  height: 0.5em;
+  right: 100%;
+  top: -2px;
+  width: 0.5em;
+}
+
+.sb-line3.sb-left:before {
+  background: #ffffff;
+  border-top: solid 2px #c5d0e4;
+  height: 0.5em;
+  right: 100%;
+  top: -2px;
+  width: 0.5em;
+}
+
+.sb-line3.sb-right {
+  background: #d5e0f4;
+  border-top-right-radius: 0;
+}
+
+.sb-line3.sb-right:after {
+  background: #ffffff;
+  border: solid 2px #c5d0e4;
+  border-radius: 1em 0 0 0;
+  border-width: 2px 0 0 2px;
+  height: 0.5em;
+  left: 100%;
+  top: -2px;
+  width: 0.5em;
+}
+
+.sb-line3.sb-right:before {
+  background: #d5e0f4;
+  border-top: solid 2px #c5d0e4;
+  height: 0.5em;
+  left: 100%;
+  top: -2px;
+  width: 0.5em;
+}

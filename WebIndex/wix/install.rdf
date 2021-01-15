@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+           xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <RDF:Description RDF:about="urn:mozilla:install-manifest">
+    <em:id>wix@db.ics.keio.ac.jp</em:id>
+    <em:name>Web IndeX</em:name>
+    <em:version>0.7.1</em:version>
+    <em:description>WIX Toolbar</em:description>
+    <em:creator>Toyama Laboratory at Keio University</em:creator>
+    <em:contributor>Masahiro Hayashi</em:contributor>
+    <em:contributor>Motomichi Toyama</em:contributor>
+    <em:contributor>Sungmin Joo</em:contributor>
+    <em:contributor>Hiroki Sato</em:contributor>
+    <em:contributor>Kentaro Takahashi</em:contributor>
+    <em:contributor>May Thaw Tar</em:contributor>
+    <em:contributor>Yuichi Shibuya</em:contributor>
+    <em:contributor>Henrik Schmitz</em:contributor>
+    <em:contributor>Brice Pesci</em:contributor>
+    <em:contributor>Jun Sitow</em:contributor>
+    <em:contributor>Ryosuke Mori</em:contributor>
+    <em:contributor>Tatsuya Yabu</em:contributor>
+    <em:contributor>Ryota Wakebe</em:contributor>
+    <em:contributor>Fuminori Ishizaki</em:contributor>
+    <em:contributor>Shun Aoyama</em:contributor>
+    <em:contributor>Wang Lu</em:contributor>
+    <em:contributor>Tatsuya Kosuda</em:contributor>
+    <em:contributor>Tomoko Matsuzaki</em:contributor>
+    <em:contributor>Yotaro Fujii</em:contributor>
+    <em:contributor>Shun Hasegawa</em:contributor>
+    <em:contributor>Takuhiro Muta</em:contributor>
+    <em:contributor>Kei Kanaoka</em:contributor>
+    <em:contributor>Tomoya Sakusa</em:contributor>
+    <em:contributor>Yosuke Aoki</em:contributor>
+    <em:contributor>Ryosuke Koshigima</em:contributor>
+    <em:contributor>Shiori Ikuta</em:contributor>
+    <em:targetApplication>
+       <RDF:Description em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                    em:minVersion="3.0"
+                    em:maxVersion="43.*" />
+    </em:targetApplication>
+    <em:iconURL>chrome://WIX.safariextension/content/images/icon.png</em:iconURL>
+  </RDF:Description>
+</RDF:RDF>

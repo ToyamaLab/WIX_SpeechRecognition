@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets">
+  <name>Web IndeX!</name>
+  <description>WIX Extension</description>
+  <author href="yourURL" email="yourEmail">Yotaro Fujii</author>
+  <access origin="*" subdomains="true"/>
+</widget>
